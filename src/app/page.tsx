@@ -1,4 +1,5 @@
 "use client";
+
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { Button } from "@/components/ui/button";
@@ -18,18 +19,18 @@ import { EDUCATION_DATA } from "@/data/education";
 import { PROJECTS_DATA } from "@/data/projects";
 import { SKILLS_DATA } from "@/data/skills";
 import GitHubContributions from "@/components/github-contributions";
+import BlogSection from "@/components/blog-section";
 import { Icons } from "@/components/icons";
 import { Mail, Calendar, MessageCircle, FileText } from "lucide-react";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { useState, useState as ReactUseState } from "react";
-// Map icon strings to components
+
 const iconMap: Record<string, React.ReactNode> = {
   github: <Icons.github className="size-3" />,
   globe: <Icons.globe className="size-3" />,
 };
 
-// Add icons to projects data
 const projectsWithIcons = PROJECTS_DATA.map(project => ({
   ...project,
   links: project.links?.map(link => ({
@@ -132,7 +133,7 @@ export default function Page() {
                     yOffset={8}
                     text={DATA.name}
                   />
-                  <p className="text-muted-foreground text-base -mt-1">Full stack/Web3 developer</p>
+                  <p className="text-muted-foreground text-base -mt-1">Full stack developer</p>
                 </div>
               </div>
             </div>
@@ -332,6 +333,7 @@ export default function Page() {
                 "Typescript": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
                 "React JS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
                 "NextJS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg",
+                "ReactNative": "/reactnative.png",
                 "Express JS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
                 "Postgresql": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
                 "Prisma": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
@@ -436,6 +438,32 @@ export default function Page() {
           }}
         />
         <div 
+          className="mb-8 h-px w-screen hidden dark:block"
+          style={{
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)',
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='12' height='1' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='12' y2='0' stroke='%23374151' stroke-width='2' stroke-dasharray='6,4'/%3E%3C/svg%3E")`,
+            backgroundRepeat: 'repeat-x',
+          }}
+        />
+
+      <div className="px-4">
+        {/* Blog Section */}
+        <section id="blog" className="mb-8">
+          <BlogSection />
+        </section>
+        </div>
+
+        <div
+          className="mb-8 h-px w-screen dark:hidden"
+          style={{
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)',
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='12' height='1' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='12' y2='0' stroke='%23e5e7eb' stroke-width='2' stroke-dasharray='6,4'/%3E%3C/svg%3E")`,
+            backgroundRepeat: 'repeat-x',
+          }}
+        />
+        <div
           className="mb-8 h-px w-screen hidden dark:block"
           style={{
             marginLeft: 'calc(-50vw + 50%)',

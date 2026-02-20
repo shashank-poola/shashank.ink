@@ -3,6 +3,7 @@ export const SKILLS_DATA = [
   "Rust",
   "React JS",
   "Express JS",
+  "ReactNative",
   "Javascript",
   "Anchor",
   "Solana",

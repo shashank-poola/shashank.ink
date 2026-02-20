@@ -87,7 +87,7 @@ export default function RootLayout({
                 "https://x.com/shashankpoola",
                 "https://instagram.com/shashankpoola"
               ],
-              "jobTitle": "Full-Stack/Web3 Engineer"
+              "jobTitle": "Full-Stack Engineer"
             }),
           }}
         />

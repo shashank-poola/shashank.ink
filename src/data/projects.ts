@@ -88,28 +88,29 @@ export const PROJECTS_DATA = [
     video: "",
   },
   {
-    title: "PlutoMarket",
+    title: "Plutolab",
     href: "#",
     active: true,
     description:
-      "A prediction market with Yes/No markets and live order books, enabling users to trade opinions across politics, sports, entertainment, and crypto with low-latency execution and continuous price updates.",
+      "AI-powered platform that generates full-stack applications from simple prompts, Built to turn ideas into production-ready software within seconds.",
     technologies: [
       "NextJS",
-      "Privy",
       "Typescript",
-      "Redis stream",
       "turborepo",
       "bun",
+      "Gemini",
+      "Openrouter",
+      "Docker",
       "ExpressJS"
     ],
     links: [
       {
         type: "Github",
-        href: "#",
+        href: "https://github.com/shashank-poola/plutolab",
         icon: "github",
       },
     ],
-    image: "/projects/Plutomarket.png",
+    image: "/projects/plutolab.png",
     video: "",
   },
   {

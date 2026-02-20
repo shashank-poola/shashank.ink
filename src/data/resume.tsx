@@ -8,7 +8,7 @@ export const DATA = {
   location: "India",
   locationLink: "https://www.google.com/maps/place/india", 
   summary:
-    "I’m a Full-Stack/Web3 Developer with hands-on experience taking products from 0 → 100. I enjoy building fast, reliable, and user-focused web applications. I work comfortably across both frontend and backend, with a strong focus on clean architecture, better UI/UX execution.",
+    "I’m a Full-Stack developer with hands-on experience taking products from 0 → 1. I enjoy building fast, reliable, and user-focused web applications. I work comfortably across both frontend and backend, with a strong focus on clean architecture, better UI/UX execution.",
   avatarUrl: "/xprofile.jpg",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },

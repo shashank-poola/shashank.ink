@@ -1,0 +1,39 @@
+---
+title: "Building a Distributed Trading System for Real-Time Markets"
+publishedAt: "2025-12-10"
+summary: "What I learned by building production-grade full-stack apps with React, Next.js, Redis, PostgreSQL, and real-time systems."
+tags: ["Full Stack", "Next.js", "React", "Backend", "Career"]
+---
+
+
+![TradeX Architecture](/projects/tradexarch.png)
+
+I recently built a project called Tradex, a real-time crypto trading platform that allows users to trade cryptocurrencies like BTC, ETH, and SOL. While the interface looks simple, the backend has to do a lot of heavy lifting streaming live market prices, processing orders with low latency, updating positions instantly, and making sure balances remain accurate.
+
+This blog explains how the engine behind the platform works, how data moves through the system, and what it takes to build a backend capable of handling real-time trading.
+## From Order Placement to Execution: How the Pipeline Works
+
+As soon as a trader clicks buy or sell, the backend jumps into action. The system checks if the order is valid, confirms that the user has enough funds, and evaluates the risk based on leverage and account balance. Once approved, the trade is executed at the current market price, and the user’s position, P&L, and available margin are updated immediately all in one step to avoid any mismatches or errors.
+
+This setup keeps the platform reliable even when traffic spikes or parts of the system fail. Meanwhile, live price data is constantly streaming in from external exchanges. Using Redis Pub/Sub and Redis Streams, the system can distribute these updates across services almost instantly while still keeping important data safe.
+
+Multiple components like the trading engine, risk checks, and user-facing services consume this data simultaneously without creating bottlenecks. The results are then sent to users over WebSockets, enabling real-time charts, position updates, and immediate feedback when a trade is executed.
+
+## Storing What Matters, Fast and Safely
+
+A trading system handles different kinds of data, and not all of it needs to be treated the same. Real-time information like open trades, margin usage, and account balances changes constantly, so it’s stored in memory for quick access. Meanwhile, long-term data such as trade history and user details is saved in durable databases like PostgreSQL or MongoDB.
+
+The system also creates periodic snapshots so that if something goes wrong, it can recover without losing important state.
+
+By combining fast in-memory storage with reliable long-term databases, the platform stays both quick and trustworthy two things you can’t compromise on when real money is involved.
+
+## Risk Management and the Architecture That Holds It Together
+
+The system continuously monitors prices to enforce stop-loss and take-profit rules, automatically closing positions when thresholds are hit. Leverage increases risk, so strict margin checks and safeguards prevent negative balances and protect system stability.
+
+This is supported by an event-driven microservices architecture where services communicate asynchronously. Stateless APIs, distributed caching, and load-balanced WebSocket nodes allow the platform to scale smoothly and handle traffic spikes without disruption.
+
+---
+## Summary
+
+Building this Exness-style trading platform taught me how to design a scalable backend for real-time systems. I gained experience with trading concepts such as leverage, slippage, and P&L, while working with live cryptocurrency data. The project also helped me understand event-driven architectures, Redis Streams. Overall, it’s one of the most challenging and complete systems I’ve built so far.
