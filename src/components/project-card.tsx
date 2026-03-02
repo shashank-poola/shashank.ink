@@ -1,11 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Link from "next/link";
@@ -21,25 +15,14 @@ interface Props {
   image?: string;
   video?: string;
   links?: readonly {
-    icon: React.ReactNode;
-    type: string;
-    href: string;
+  icon: React.ReactNode;
+  type: string;
+  href: string;
   }[];
   className?: string;
 }
 
-export function ProjectCard({
-  title,
-  href,
-  description,
-  dates,
-  tags,
-  link,
-  image,
-  video,
-  links,
-  className,
-}: Props) {
+export function ProjectCard({ title, href, description, dates, tags, link, image, video, links, className }: Props) {
   return (
     <Card
       className={

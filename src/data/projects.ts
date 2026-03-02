@@ -58,6 +58,63 @@ export const PROJECTS_DATA = [
     video: "",
   },
   {
+    title: "TradeX(Mobile)",
+    href: "https://github.com/shashank-poola/exness-v3.git",
+    active: true,
+    description:
+      "A real-time crypto trading mobile application built with React Native and Expo, featuring leverage trading, stop-loss, take-profit, and live P&L tracking. Designed for fast execution and a smooth, professional trading experience on mobile devices.",
+    technologies: [
+      "React Native",
+      "Expo",
+      "Bun",
+      "Typescript",
+      "Redis",
+      "Prisma",
+      "Postgresql",
+      "Docker",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://x.com/shashankpoola/status/2027135122320048319?s=20",
+        icon: "globe",
+      },
+      {
+        type: "Github",
+        href: "https://github.com/shashank-poola/exness-v3",
+        icon: "github",
+      },
+    ],
+    image: "",
+    video: "/projects/exnessvideo.mp4",
+  },
+  {
+    title: "Plutolab",
+    href: "#",
+    active: true,
+    description:
+      "AI-powered platform that generates full-stack applications from simple prompts, Built to turn ideas into production-ready software within seconds.",
+    technologies: [
+      "NextJS",
+      "Typescript",
+      "turborepo",
+      "bun",
+      "Gemini",
+      "Openrouter",
+      "Docker",
+      "ExpressJS"
+    ],
+    links: [
+      {
+        type: "Github",
+        href: "https://github.com/shashank-poola/plutolab",
+        icon: "github",
+      },
+    ],
+    image: "/projects/plutolab.png",
+    video: "",
+  },
+  {
     title: "Tipfinity",
     href: "https://github.com/shashank-poola/tipfinity-v2",
     active: true,
@@ -85,32 +142,6 @@ export const PROJECTS_DATA = [
       },
     ],
     image: "/projects/tipfinity.png",
-    video: "",
-  },
-  {
-    title: "Plutolab",
-    href: "#",
-    active: true,
-    description:
-      "AI-powered platform that generates full-stack applications from simple prompts, Built to turn ideas into production-ready software within seconds.",
-    technologies: [
-      "NextJS",
-      "Typescript",
-      "turborepo",
-      "bun",
-      "Gemini",
-      "Openrouter",
-      "Docker",
-      "ExpressJS"
-    ],
-    links: [
-      {
-        type: "Github",
-        href: "https://github.com/shashank-poola/plutolab",
-        icon: "github",
-      },
-    ],
-    image: "/projects/plutolab.png",
     video: "",
   },
   {
