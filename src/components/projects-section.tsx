@@ -5,24 +5,7 @@ import { ProjectCard } from "@/components/project-card";
 import { Button } from "@/components/ui/button";
 import { useState } from "react";
 
-interface Project {
-  title: string;
-  href: string;
-  description: string;
-  technologies: readonly string[];
-  image?: string;
-  video?: string;
-  links?: Array<{
-    type: string;
-    href: string;
-    icon: any;
-  }>;
-}
-
-interface ProjectsSectionProps {
-  projects: Project[];
-  blurFadeDelay: number;
-}
+import { Project, ProjectsSectionProps } from "@/types/project.type";
 
 export function ProjectsSection({ projects, blurFadeDelay }: ProjectsSectionProps) {
   const [showAllProjects, setShowAllProjects] = useState(false);
