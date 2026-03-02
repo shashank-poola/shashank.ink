@@ -1,4 +1,4 @@
-# Shashank Poola — Portfolio✨
+# Shashank Poola - Portfolio✨
 
 Personal portfolio showcasing projects, experience, and writing.
 
@@ -6,11 +6,11 @@ Personal portfolio showcasing projects, experience, and writing.
 
 ## Tech Stack
 
-- **Framework:** Next.js 14
+- **Framework:** Next.js 14, Typescript, React
 - **Styling:** Tailwind CSS
 - **UI:** Radix UI, Framer Motion
 - **Content:** MDX, Markdown
-- **Deploy:** Vercel (recommended)
+- **Deploy:** Vercel
 
 ## Getting Started
 
