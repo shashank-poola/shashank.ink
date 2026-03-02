@@ -62,7 +62,7 @@ export const PROJECTS_DATA = [
     href: "https://github.com/shashank-poola/exness-v3.git",
     active: true,
     description:
-      "A real-time crypto trading mobile application built with React Native and Expo, featuring leverage trading, stop-loss, take-profit, and live P&L tracking. Designed for fast execution and a smooth, professional trading experience on mobile devices.",
+      "A crypto trading application built with React Native and Expo, featuring leverage trading, stop-loss, take-profit, and live P&L tracking. Designed for fast execution and a smooth, professional trading experience on mobile devices.",
     technologies: [
       "React Native",
       "Expo",
