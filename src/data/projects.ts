@@ -76,7 +76,7 @@ export const PROJECTS_DATA = [
     links: [
       {
         type: "Website",
-        href: "https://x.com/shashankpoola/status/2027135122320048319?s=20",
+        href: "https://www.youtube.com/watch?v=XcdYgKJN1LI",
         icon: "globe",
       },
       {
