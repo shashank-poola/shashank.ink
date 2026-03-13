@@ -162,9 +162,9 @@ export default function Page() {
                 </Link>
               </Button>
               <Button asChild variant="outline" size="default" className="rounded-full text-sm">
-                <Link href={`mailto:${DATA.contact.email}`}>
-                  <Mail className="mr-1 h-4 w-4" />
-                  Send email
+                <Link href="https://www.cal.eu/shashankpoola/30min?overlayCalendar=true" target="_blank" rel="noopener noreferrer">
+                  <Calendar className="mr-1 h-4 w-4" />
+                  Book a Call
                 </Link>
               </Button>
             </div>
@@ -324,7 +324,7 @@ export default function Page() {
         {/* Skills Section */}
         <section id="skills" className="mb-8">
           <BlurFade delay={BLUR_FADE_DELAY * 8}>
-            <h2 className="text-xl font-bold mb-4 underline">Technology & Tools I Use</h2>
+            <h2 className="text-xl font-bold mb-4">Technology & Tools I Use</h2>
           </BlurFade>
           <div className="flex flex-wrap gap-2">
             {SKILLS_DATA.map((skill, id) => {

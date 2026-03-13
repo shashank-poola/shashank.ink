@@ -28,8 +28,8 @@ export default function GitHubContributions({
     <div className="w-full overflow-hidden">
       <GitHubCalendar
         username={username}
-        blockSize={12}
-        blockMargin={3}
+        blockSize={10}
+        blockMargin={3.96}
         colorScheme={theme === "dark" ? "dark" : "light"}
         fontSize={12}
         style={{

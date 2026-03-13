@@ -100,7 +100,9 @@ export const ResumeCard = ({
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              {description}
+              {description.split("\n").map((line, i) => (
+                <p key={i} className="mb-1 last:mb-0">{line}</p>
+              ))}
             </motion.div>
           )}
         </div>
