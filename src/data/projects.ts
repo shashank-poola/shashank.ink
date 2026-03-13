@@ -145,6 +145,65 @@ export const PROJECTS_DATA = [
     video: "",
   },
   {
+    title: "AgentOS",
+    href: "https://github.com/shashank-poola/agentos.git",
+    active: true,
+    description:
+      "AgentOS is an AI-powered search and knowledge platform that connects to Google Drive, indexes user files into a vector database, and enables natural-language search across personal documents and the web from one place.",
+    technologies: [
+      "NodeJS",
+      "Typescript",
+      "Bun",
+      "NextJS",
+      "Gemini",
+      "Serper",
+      "Qdrant",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://tryagentos.vercel.app",
+        icon: "globe",
+      },
+      {
+        type: "Github",
+        href: "https://github.com/shashank-poola/agentos.git",
+        icon: "github",
+      },
+    ],
+    image: "/projects/agentos.png",
+    video: "",
+  },
+  {
+    title: "Tidder - Social Media Platform ",
+    href: "https://github.com/shashank-poola/tidder.git",
+    active: true,
+    description:
+      "Tidder is a Reddit-inspired social media app built using Expo and React Native, designed for community-based discussions, content sharing, and mobile-first user interaction with a clean and responsive experience.",
+    technologies: [
+      "React Native",
+      "Expo",
+      "Typescript",
+      "Prisma",
+      "Postgresql",
+      "Docker",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://www.tella.tv/video/tidder-reddit-style-mobile-application-a84g",
+        icon: "globe",
+      },
+      {
+        type: "Github",
+        href: "https://github.com/shashank-poola/tidder.git",
+        icon: "github",
+      },
+    ],
+    image: "",
+    video: "/projects/tidder.mp4",
+  },
+  {
     title: "HighlightText",
     href: "https://github.com/shashank-poola/highlightnow",
     active: true,
