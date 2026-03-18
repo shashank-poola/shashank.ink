@@ -175,33 +175,32 @@ export const PROJECTS_DATA = [
     video: "",
   },
   {
-    title: "Tidder - Social Media Platform ",
-    href: "https://github.com/shashank-poola/tidder.git",
+    title: "Sonara - Music Player App",
+    href: "https://youtu.be/FnBajhBJ7Z4?si=kZwJngUQ2bwgi_8i",
     active: true,
     description:
-      "Tidder is a Reddit-inspired social media app built using Expo and React Native, designed for community-based discussions, content sharing, and mobile-first user interaction with a clean and responsive experience.",
+      "Sonara is a React Native music player built with Expo and TypeScript, featuring real-time music discovery, synced player controls, and a polished mobile UI powered by the JioSaavn API.",
     technologies: [
       "React Native",
       "Expo",
       "Typescript",
-      "Prisma",
-      "Postgresql",
-      "Docker",
+      "Redux",
+      "JioSaavn",
     ],
     links: [
       {
         type: "Website",
-        href: "https://www.tella.tv/video/tidder-reddit-style-mobile-application-a84g",
+        href: "https://youtu.be/FnBajhBJ7Z4?si=kZwJngUQ2bwgi_8i",
         icon: "globe",
       },
       {
         type: "Github",
-        href: "https://github.com/shashank-poola/tidder.git",
+        href: "https://github.com/shashank-poola/sonara-music.git",
         icon: "github",
       },
     ],
     image: "",
-    video: "/projects/tidder.mp4",
+    video: "/projects/sonara.mp4",
   },
   {
     title: "HighlightText",
