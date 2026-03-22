@@ -89,29 +89,33 @@ export const PROJECTS_DATA = [
     video: "/projects/exnessvideo.mp4",
   },
   {
-    title: "Plutolab",
-    href: "#",
+    title: "AgentOS",
+    href: "https://github.com/shashank-poola/agentos.git",
     active: true,
     description:
-      "AI-powered platform that generates full-stack applications from simple prompts, Built to turn ideas into production-ready software within seconds.",
+      "AgentOS is an AI-powered search and knowledge platform that connects to Google Drive, indexes user files into a vector database, and enables natural-language search across personal documents and the web from one place.",
     technologies: [
-      "NextJS",
+      "NodeJS",
       "Typescript",
-      "turborepo",
-      "bun",
+      "Bun",
+      "NextJS",
       "Gemini",
-      "Openrouter",
-      "Docker",
-      "ExpressJS"
+      "Serper",
+      "Qdrant",
     ],
     links: [
       {
+        type: "Website",
+        href: "https://tryagentos.vercel.app",
+        icon: "globe",
+      },
+      {
         type: "Github",
-        href: "https://github.com/shashank-poola/plutolab",
+        href: "https://github.com/shashank-poola/agentos.git",
         icon: "github",
       },
     ],
-    image: "/projects/plutolab.png",
+    image: "/projects/agentos.png",
     video: "",
   },
   {
@@ -145,33 +149,29 @@ export const PROJECTS_DATA = [
     video: "",
   },
   {
-    title: "AgentOS",
-    href: "https://github.com/shashank-poola/agentos.git",
+    title: "Plutolab",
+    href: "#",
     active: true,
     description:
-      "AgentOS is an AI-powered search and knowledge platform that connects to Google Drive, indexes user files into a vector database, and enables natural-language search across personal documents and the web from one place.",
+      "AI-powered platform that generates full-stack applications from simple prompts, Built to turn ideas into production-ready software within seconds.",
     technologies: [
-      "NodeJS",
-      "Typescript",
-      "Bun",
       "NextJS",
+      "Typescript",
+      "turborepo",
+      "bun",
       "Gemini",
-      "Serper",
-      "Qdrant",
+      "Openrouter",
+      "Docker",
+      "ExpressJS"
     ],
     links: [
       {
-        type: "Website",
-        href: "https://tryagentos.vercel.app",
-        icon: "globe",
-      },
-      {
         type: "Github",
-        href: "https://github.com/shashank-poola/agentos.git",
+        href: "https://github.com/shashank-poola/plutolab",
         icon: "github",
       },
     ],
-    image: "/projects/agentos.png",
+    image: "/projects/plutolab.png",
     video: "",
   },
   {
