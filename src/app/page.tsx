@@ -106,7 +106,7 @@ export default function Page() {
         />
         <div className="px-4">
         {/* Hero Section */}
-        <section id="hero" className="mb-8">
+        <section id="hero" className="mb-2">
           <BlurFade delay={BLUR_FADE_DELAY}>
             <div className="flex items-center gap-4">
               <div className="relative">
@@ -144,7 +144,7 @@ export default function Page() {
         <section id="about" className="mb-8">
           <BlurFade delay={BLUR_FADE_DELAY * 3}>
             <div className="space-y-3">
-              <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert">
+              <Markdown className="prose max-w-full text-pretty font-sans text-base text-muted-foreground dark:prose-invert [&_p:first-of-type]:mt-0">
                 {DATA.summary}
               </Markdown>
             </div>

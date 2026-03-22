@@ -8,7 +8,7 @@ export const DATA = {
   location: "India",
   locationLink: "https://www.google.com/maps/place/india", 
   summary:
-    "I’m a Full-Stack developer with hands-on experience taking products from 0 → 1. I enjoy building fast, reliable, and user-focused web applications. I work comfortably across both frontend and backend, with a strong focus on clean architecture, better UI/UX execution.",
+    "I’m a Full-Stack Developer with 1+ years of experience building and shipping products from 0 to 1 using Next.js, React, and Node.js. I’ve worked on distributed backend systems, real-time architectures, AI-powered products, and cross-platform mobile apps.",
   avatarUrl: "/xprofile.jpg",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
