@@ -320,9 +320,71 @@ export default function Page() {
           }}
         />
 
-<div className="px-4">
-        {/* Skills Section */}
-        <section id="skills" className="mb-8">
+      <div className="px-4">
+        {/* Projects Section */}
+        <section id="projects" className="mb-8">
+          <BlurFade delay={BLUR_FADE_DELAY * 12}>
+            <h2 className="text-xl font-bold mb-4">Projects</h2>
+          </BlurFade>
+          {/** LIMIT TO 4 PROJECTS INITIALLY; SHOW ALL IF showAllProjects IS TRUE **/}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {(showAllProjects ? projectsWithIcons : projectsWithIcons.slice(0, 4)).map((project, id) => (
+              <BlurFade
+                key={project.title}
+                delay={BLUR_FADE_DELAY * 13 + id * 0.05}
+              >
+                <ProjectCard
+                  href={project.href}
+                  title={project.title}
+                  description={project.description}
+                  tags={project.technologies}
+                  image={project.image}
+                  video={project.video}
+                  links={project.links}
+                />
+              </BlurFade>
+            ))}
+          </div>
+
+          {/** Show 'View All' button when collapsed **/}
+          {!showAllProjects && projectsWithIcons.length > 4 && (
+            <div className="flex justify-center mt-4">
+              <Button
+                onClick={() => setShowAllProjects(true)}
+                variant="outline"
+                size="default"
+                className="rounded-full"
+              >
+                View All Projects
+              </Button>
+            </div>
+          )}
+        </section>
+        </div>
+
+        <div 
+          className="mb-8 h-px w-screen dark:hidden"
+          style={{
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)',
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='12' height='1' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='12' y2='0' stroke='%23e5e7eb' stroke-width='2' stroke-dasharray='6,4'/%3E%3C/svg%3E")`,
+            backgroundRepeat: 'repeat-x',
+          }}
+        />
+        <div 
+          className="mb-8 h-px w-screen hidden dark:block"
+          style={{
+            marginLeft: 'calc(-50vw + 50%)',
+            marginRight: 'calc(-50vw + 50%)',
+            backgroundImage: `url("data:image/svg+xml,%3Csvg width='12' height='1' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='12' y2='0' stroke='%23374151' stroke-width='2' stroke-dasharray='6,4'/%3E%3C/svg%3E")`,
+            backgroundRepeat: 'repeat-x',
+          }}
+        />
+
+         <div className="px-4">
+
+                {/* Skills Section */}
+                <section id="skills" className="mb-8">
           <BlurFade delay={BLUR_FADE_DELAY * 8}>
             <h2 className="text-xl font-bold mb-4">Technology & Tools I Use</h2>
           </BlurFade>
@@ -386,66 +448,6 @@ export default function Page() {
         />
 
 
-      <div className="px-4">
-        {/* Projects Section */}
-        <section id="projects" className="mb-8">
-          <BlurFade delay={BLUR_FADE_DELAY * 12}>
-            <h2 className="text-xl font-bold mb-4">Projects</h2>
-          </BlurFade>
-          {/** LIMIT TO 4 PROJECTS INITIALLY; SHOW ALL IF showAllProjects IS TRUE **/}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {(showAllProjects ? projectsWithIcons : projectsWithIcons.slice(0, 4)).map((project, id) => (
-              <BlurFade
-                key={project.title}
-                delay={BLUR_FADE_DELAY * 13 + id * 0.05}
-              >
-                <ProjectCard
-                  href={project.href}
-                  title={project.title}
-                  description={project.description}
-                  tags={project.technologies}
-                  image={project.image}
-                  video={project.video}
-                  links={project.links}
-                />
-              </BlurFade>
-            ))}
-          </div>
-
-          {/** Show 'View All' button when collapsed **/}
-          {!showAllProjects && projectsWithIcons.length > 4 && (
-            <div className="flex justify-center mt-4">
-              <Button
-                onClick={() => setShowAllProjects(true)}
-                variant="outline"
-                size="default"
-                className="rounded-full"
-              >
-                View All Projects
-              </Button>
-            </div>
-          )}
-        </section>
-        </div>
-
-        <div 
-          className="mb-8 h-px w-screen dark:hidden"
-          style={{
-            marginLeft: 'calc(-50vw + 50%)',
-            marginRight: 'calc(-50vw + 50%)',
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='12' height='1' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='12' y2='0' stroke='%23e5e7eb' stroke-width='2' stroke-dasharray='6,4'/%3E%3C/svg%3E")`,
-            backgroundRepeat: 'repeat-x',
-          }}
-        />
-        <div 
-          className="mb-8 h-px w-screen hidden dark:block"
-          style={{
-            marginLeft: 'calc(-50vw + 50%)',
-            marginRight: 'calc(-50vw + 50%)',
-            backgroundImage: `url("data:image/svg+xml,%3Csvg width='12' height='1' xmlns='http://www.w3.org/2000/svg'%3E%3Cline x1='0' y1='0' x2='12' y2='0' stroke='%23374151' stroke-width='2' stroke-dasharray='6,4'/%3E%3C/svg%3E")`,
-            backgroundRepeat: 'repeat-x',
-          }}
-        />
 
       <div className="px-4">
         {/* Blog Section */}
