@@ -81,7 +81,7 @@ export default function Blog({
         className="fixed inset-y-0 pointer-events-none z-0"
         style={{
           left: 'max(1rem, calc((100% - 48rem) / 2))',
-          width: '48rem',
+          width: 'min(calc(100% - 2rem), 48rem)',
         }}
       >
         <div className="h-full w-full relative">
@@ -116,8 +116,8 @@ export default function Blog({
         </div>
       </div>
 
-      <main className="relative flex flex-col min-h-[100dvh] max-w-3xl mx-auto py-20 z-10">
-        <div className="px-4">
+      <main className="relative flex flex-col min-h-[100dvh] max-w-3xl mx-auto py-12 sm:py-20 z-10">
+        <div className="px-6">
           {/* Header with back button and current time - ABOVE the dashed line */}
           <div className="flex items-center justify-between mb-4">
             <Link
@@ -152,7 +152,7 @@ export default function Blog({
           }}
         />
 
-        <div className="px-4">
+        <div className="px-6">
           <section id="blog">
             <BlurFade delay={BLUR_FADE_DELAY}>
               <h1 className="title font-medium text-2xl tracking-tighter mb-2">

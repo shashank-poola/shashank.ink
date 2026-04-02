@@ -40,9 +40,9 @@ export default function BlogSection() {
           .map((post, id) => (
             <BlurFade key={post.slug} delay={BLUR_FADE_DELAY * 21 + id * 0.05}>
               <Link href={`/writing/${post.slug}`} className="block">
-                <div className="flex items-center justify-between py-2 px-3 hover:bg-gray-50 dark:hover:bg-gray-900/30 rounded-lg transition-colors group">
-                  <p className="font-semibold tracking-tight">{post.metadata.title}</p>
-                  <p className="text-xs text-muted-foreground">
+                <div className="flex items-center justify-between gap-3 py-2 px-3 hover:bg-gray-50 dark:hover:bg-gray-900/30 rounded-lg transition-colors group">
+                  <p className="font-semibold tracking-tight min-w-0 truncate">{post.metadata.title}</p>
+                  <p className="text-xs text-muted-foreground shrink-0 whitespace-nowrap">
                     {new Date(post.metadata.publishedAt).toLocaleDateString('en-US', {
                       year: 'numeric',
                       month: 'short',

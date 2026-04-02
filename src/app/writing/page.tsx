@@ -20,7 +20,7 @@ export default async function BlogPage() {
         className="fixed inset-y-0 pointer-events-none z-0"
         style={{
           left: 'max(1rem, calc((100% - 48rem) / 2))',
-          width: '48rem',
+          width: 'min(calc(100% - 2rem), 48rem)',
         }}
       >
         <div className="h-full w-full relative">
@@ -55,7 +55,7 @@ export default async function BlogPage() {
         </div>
       </div>
 
-      <main className="relative flex flex-col min-h-[100dvh] max-w-3xl mx-auto py-20 z-10">
+      <main className="relative flex flex-col min-h-[100dvh] max-w-3xl mx-auto py-12 sm:py-20 z-10">
         <div
           className="mb-8 h-px w-screen dark:hidden"
           style={{
@@ -75,7 +75,7 @@ export default async function BlogPage() {
           }}
         />
 
-        <div className="px-4">
+        <div className="px-6">
           <section>
             <BlurFade delay={BLUR_FADE_DELAY}>
               <h1 className="font-medium text-2xl mb-8 tracking-tighter">Writings</h1>
@@ -97,10 +97,10 @@ export default async function BlogPage() {
                       href={`/writing/${post.slug}`}
                     >
                       <div className="border-b border-gray-200 dark:border-gray-800 py-3 hover:bg-gray-50 dark:hover:bg-gray-900/30 transition-colors px-2">
-                        <p className="font-semibold tracking-tight text-lg">{post.metadata.title}</p>
-                        <div className="flex items-center gap-3 mt-1 text-xs text-muted-foreground">
+                        <p className="font-semibold tracking-tight text-base sm:text-lg">{post.metadata.title}</p>
+                        <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1 text-xs text-muted-foreground">
                           <span>{DATA.name}</span>
-                          <span>•</span>
+                          <span aria-hidden>•</span>
                           <span>
                             {new Date(post.metadata.publishedAt).toLocaleDateString('en-US', {
                               year: 'numeric',
@@ -108,7 +108,7 @@ export default async function BlogPage() {
                               day: 'numeric'
                             })}
                           </span>
-                          <span>•</span>
+                          <span aria-hidden>•</span>
                           <span>5 min read</span>
                         </div>
                       </div>

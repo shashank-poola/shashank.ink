@@ -33,7 +33,7 @@ export default function GitHubContributions({
         colorScheme={theme === "dark" ? "dark" : "light"}
         fontSize={12}
         style={{
-          width: "50%",
+          width: "100%",
           minHeight: "150px",
         }}
         theme={{

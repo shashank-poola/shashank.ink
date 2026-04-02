@@ -46,11 +46,11 @@ export default function Page() {
   return (
     <div className="relative min-h-[100dvh]">
       {/* Vertical Layout Guides */}
-      <div 
+      <div
         className="fixed inset-y-0 pointer-events-none z-0"
-        style={{ 
+        style={{
           left: 'max(1rem, calc((100% - 48rem) / 2))',
-          width: '48rem',
+          width: 'min(calc(100% - 2rem), 48rem)',
         }}
       >
         <div className="h-full w-full relative">
@@ -85,7 +85,7 @@ export default function Page() {
         </div>
       </div>
       
-      <main className="relative flex flex-col min-h-[100dvh] max-w-3xl mx-auto py-20 z-10">
+      <main className="relative flex flex-col min-h-[100dvh] max-w-3xl mx-auto py-12 sm:py-20 z-10">
         <div 
           className="mb-8 h-px w-screen dark:hidden"
           style={{
@@ -104,7 +104,7 @@ export default function Page() {
             backgroundRepeat: 'repeat-x',
           }}
         />
-        <div className="px-4">
+        <div className="px-6">
         {/* Hero Section */}
         <section id="hero" className="mb-2">
           <BlurFade delay={BLUR_FADE_DELAY}>
@@ -191,7 +191,7 @@ export default function Page() {
           }}
         />
 
-      <div className="px-4">
+      <div className="px-6">
         {/* Social Links & GitHub Contributions Section */}
         <section id="socials" className="mb-8">
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
@@ -276,7 +276,7 @@ export default function Page() {
           }}
         />
 
-      <div className="px-4">
+      <div className="px-6">
         {/* Work Experience Section */}
         <section id="work" className="mb-8">
           <BlurFade delay={BLUR_FADE_DELAY * 10}>
@@ -320,7 +320,7 @@ export default function Page() {
           }}
         />
 
-      <div className="px-4">
+      <div className="px-6">
         {/* Projects Section */}
         <section id="projects" className="mb-8">
           <BlurFade delay={BLUR_FADE_DELAY * 12}>
@@ -381,7 +381,7 @@ export default function Page() {
           }}
         />
 
-         <div className="px-4">
+         <div className="px-6">
 
                 {/* Skills Section */}
                 <section id="skills" className="mb-8">
@@ -449,7 +449,7 @@ export default function Page() {
 
 
 
-      <div className="px-4">
+      <div className="px-6">
         {/* Blog Section */}
         <section id="blog" className="mb-8">
           <BlogSection />
@@ -475,7 +475,7 @@ export default function Page() {
           }}
         />
 
-      <div className="px-4">
+      <div className="px-6">
         {/* Education Section */}
         <section id="education" className="mb-8">
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
@@ -520,12 +520,12 @@ export default function Page() {
           }}
         />
 
-      <div className="px-4">
+      <div className="px-6">
         {/* Contact Section */}
         <section id="contact">
           <BlurFade delay={BLUR_FADE_DELAY * 16}>
             <div className="text-center space-y-3">
-              <h2 className="text-3xl font-bold tracking-tighter">
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tighter">
                 Get in Touch
               </h2>
               <p className="text-muted-foreground text-base">
