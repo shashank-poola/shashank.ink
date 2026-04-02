@@ -85,7 +85,7 @@ export default function Page() {
         </div>
       </div>
       
-      <main className="relative flex flex-col min-h-[100dvh] max-w-3xl mx-auto py-12 sm:py-20 z-10">
+      <main className="relative flex flex-col min-h-[100dvh] max-w-3xl mx-auto pt-12 sm:pt-20 pb-28 sm:pb-32 z-10">
         <div 
           className="mb-8 h-px w-screen dark:hidden"
           style={{
