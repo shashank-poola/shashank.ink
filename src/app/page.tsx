@@ -133,7 +133,7 @@ export default function Page() {
                     yOffset={8}
                     text={DATA.name}
                   />
-                  <p className="text-muted-foreground text-base -mt-1">Full stack developer</p>
+                  <p className="text-muted-foreground text-base -mt-1">Full stack AI Engineer · Building Agents · India</p>
                 </div>
               </div>
             </div>
@@ -395,16 +395,15 @@ export default function Page() {
                 "Typescript": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg",
                 "React JS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
                 "NextJS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-plain.svg",
-                "ReactNative": "/reactnative.png",
+                "Python": "/icons/python.png",
                 "Express JS": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
                 "Postgresql": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg",
                 "Prisma": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/prisma/prisma-original.svg",
                 "Docker": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain.svg",
-                "Anchor": "/anchor.png",
-                "Solana": "/solana.jpg",
+                "FastAPI": "/icons/fastapi.svg",
                 "Git": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
                 "Github": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg",
-                "Rust": "/rust.png",
+                "Qdrant": "/icons/qdrant.png",
                 "MongoDb": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg",
                 "Redis": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redis/redis-original.svg",
                 "Vercel": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg",

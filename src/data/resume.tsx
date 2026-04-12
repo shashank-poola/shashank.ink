@@ -8,7 +8,7 @@ export const DATA = {
   location: "India",
   locationLink: "https://www.google.com/maps/place/india", 
   summary:
-    "I’m a Full-Stack Developer with 1+ years of experience building and shipping products from 0 to 1 using Next.js, React, and Node.js. I’ve worked on distributed backend systems, real-time architectures, AI-powered products, and cross-platform mobile apps.",
+    "I build things that actually work. Currently going deep on AI agents, multi-step reasoning, RAG pipelines, and autonomous systems. Background in full-stack (Next.js, Node.js, TypeScript) with a focus on distributed, real-time architectures. Shipped products from 0→1. Now pointing everything at AI. ",
   avatarUrl: "/xprofile.jpg",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
