@@ -20,6 +20,8 @@ import { PROJECTS_DATA } from "@/data/projects";
 import { SKILLS_DATA } from "@/data/skills";
 import GitHubContributions from "@/components/github-contributions";
 import BlogSection from "@/components/blog-section";
+import { OpenSourceContributions } from "@/components/opensource-contributions";
+import { OPENSOURCE_DATA } from "@/data/opensource";
 import { Icons } from "@/components/icons";
 import { Mail, Calendar, FileText } from "lucide-react";
 import Link from "next/link";
@@ -314,6 +316,17 @@ export default function Page() {
                 </BlurFade>
               ))}
             </div>
+          </section>
+        </div>
+
+        <HorizontalDivider />
+
+        <div className="px-6">
+          {/* Open Source Section */}
+          <section id="opensource" className="mb-8">
+            <BlurFade delay={BLUR_FADE_DELAY * 11.5}>
+              <OpenSourceContributions contributions={OPENSOURCE_DATA} />
+            </BlurFade>
           </section>
         </div>
 
