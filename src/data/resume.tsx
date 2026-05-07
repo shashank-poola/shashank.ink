@@ -8,7 +8,7 @@ export const DATA = {
   location: "India",
   locationLink: "https://www.google.com/maps/place/india", 
   summary:
-    "I build things that actually work. Currently going deep on AI agents, multi-step reasoning, RAG pipelines, and autonomous systems. Background in full-stack (Next.js, Node.js, TypeScript) with a focus on distributed, real-time architectures. Shipped products from 0→1. Now pointing everything at AI. ",
+    "engineer, polymath, shipping from 0→1\ngoing deep in AI agents, RAG pipelines & autonomous systems\nfull-stack in Next.js, Node.js, TypeScript",
   avatarUrl: "/xprofile.jpg",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
