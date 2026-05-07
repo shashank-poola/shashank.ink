@@ -17,6 +17,8 @@ export const SKILLS_DATA = [
   "Docker",
   "Turborepo",
   "Queues",
+  "LangChain",
+  "LangGraph",
   "Git",
   "Github",
   "Vercel",

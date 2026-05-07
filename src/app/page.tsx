@@ -29,6 +29,7 @@ import { useTheme } from "next-themes";
 const iconMap: Record<string, React.ReactNode> = {
   github: <Icons.github className="size-3" />,
   globe: <Icons.globe className="size-3" />,
+  youtube: <Icons.youtube className="size-3" />,
 };
 
 const projectsWithIcons = PROJECTS_DATA.map(project => ({

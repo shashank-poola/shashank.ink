@@ -28,6 +28,11 @@ export const PROJECTS_DATA = [
         href: "https://github.com/shashank-poola/exness-v3",
         icon: "github",
       },
+      {
+        type: "Demo",
+        href: "https://youtu.be/n1LuJS8kjcA?si=_kS0aGXSMTv_kthq",
+        icon: "youtube",
+      },
     ],
     image: "/projects/tradex.png",
     video: "",
@@ -75,14 +80,14 @@ export const PROJECTS_DATA = [
     ],
     links: [
       {
-        type: "Website",
-        href: "https://www.youtube.com/watch?v=XcdYgKJN1LI",
-        icon: "globe",
-      },
-      {
         type: "Github",
         href: "https://github.com/shashank-poola/exness-v3",
         icon: "github",
+      },
+      {
+        type: "Demo",
+        href: "https://youtu.be/XcdYgKJN1LI?si=K0PpmtaiVpOLAUdP",
+        icon: "youtube",
       },
     ],
     image: "",
@@ -144,6 +149,11 @@ export const PROJECTS_DATA = [
         href: "https://github.com/shashank-poola/tipfinity",
         icon: "github",
       },
+      {
+        type: "Demo",
+        href: "https://youtu.be/_r4F5qOw8fs?si=lRDEVFe8LM97Bkns",
+        icon: "youtube",
+      },
     ],
     image: "/projects/tipfinity.png",
     video: "",
@@ -189,14 +199,14 @@ export const PROJECTS_DATA = [
     ],
     links: [
       {
-        type: "Website",
-        href: "https://youtu.be/FnBajhBJ7Z4?si=kZwJngUQ2bwgi_8i",
-        icon: "globe",
-      },
-      {
         type: "Github",
         href: "https://github.com/shashank-poola/sonara-music.git",
         icon: "github",
+      },
+      {
+        type: "Demo",
+        href: "https://youtu.be/FnBajhBJ7Z4?si=7lTyWZU3oqtkORgv",
+        icon: "youtube",
       },
     ],
     image: "",
@@ -224,6 +234,11 @@ export const PROJECTS_DATA = [
         type: "Github",
         href: "https://github.com/shashank-poola/highlightnow",
         icon: "github",
+      },
+      {
+        type: "Demo",
+        href: "https://youtu.be/tCtIWDeEgvE?si=_sEhhRTIyFeHsTub",
+        icon: "youtube",
       },
     ],
     image: "/projects/highlighttext.png",
