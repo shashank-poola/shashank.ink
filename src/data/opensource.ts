@@ -31,6 +31,11 @@ export const OPENSOURCE_DATA: OpenSourceContrib[] = [
         url: "https://github.com/getnao/nao/pull/720",
         merged: true,
       },
+      {
+        title: "fix: format large numbers with K/M/B suffix in KPI cards and tooltips",
+        url: "https://github.com/getnao/nao/pull/766",
+        merged: true,
+      },
     ],
   },
 ];

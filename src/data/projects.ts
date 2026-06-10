@@ -2,8 +2,68 @@ import { LucideIcon } from "lucide-react";
 
 export const PROJECTS_DATA = [
   {
+    title: "PullRabbit",
+    href: "https://github.com/shashank-poola/pullrabbit.git",
+    active: true,
+    description:
+      "AI-first pull request reviewer with context aware feedback, LangGraph multi-agent pipeline (3 parallel agents), line by line code suggestions, BullMQ/Redis job queue, AST + call graph context fetching. Self-hostable, open source.",
+    technologies: [
+      "Typescript",
+      "NextJS",
+      "LangChain",
+      "Github API",
+      "Groq",
+      "google-embedding",
+      "Qdrant",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://pullrabbit.shashank.ink",
+        icon: "globe",
+      },
+      {
+        type: "Github",
+        href: "https://github.com/shashank-poola/pullrabbit.git",
+        icon: "github",
+      },
+    ],
+    image: "/projects/pullrabbit.png",
+    video: "",
+  },
+  {
+    title: "DataMind",
+    href: "https://github.com/shashank-poola/datamind.git",
+    active: true,
+    description:
+      "Enterprise RAG, Built Different. Hybrid BM25 + dense vector search, Cohere cross-encoder reranking, and Groq streaming. Built to handle messy, heterogeneous document sets and return accurate, cited answers at speed.",
+    technologies: [
+      "Python",
+      "FastAPI",
+      "uvicorn",
+      "NextJS",
+      "BM25",
+      "Cohere Reranking",
+      "Qdrant",
+    ],
+    links: [
+      {
+        type: "Website",
+        href: "https://datamind.shashank.ink",
+        icon: "globe",
+      },
+      {
+        type: "Github",
+        href: "https://github.com/shashank-poola/datamind.git",
+        icon: "github",
+      },
+    ],
+    image: "/projects/datamind.png",
+    video: "",
+  },
+  {
     title: "TradeX",
-    href: "https://github.com/shashank-poola/exness-v3",
+    href: "https://github.com/shashank-poola/tradex-distributed-system",
     active: true,
     description:
       "Real-time crypto trading platform using live Backpack market data, supporting leveraged long/short trades, slippage control, stop loss, and PnL tracking.",
@@ -123,95 +183,95 @@ export const PROJECTS_DATA = [
     image: "/projects/agentos.png",
     video: "",
   },
-  {
-    title: "Tipfinity",
-    href: "https://github.com/shashank-poola/tipfinity-v2",
-    active: true,
-    description:
-      "Tipfinity is an instant creator tipping platform built on Solana, allowing fans to support creators in seconds with near-zero fees.",
-    technologies: [
-      "Solana",
-      "NextJS",
-      "Bun",
-      "Typescript",
-      "Prisma",
-      "Postgresql",
-      "Docker",
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://tipfinity.xyz",
-        icon: "globe",
-      },
-      {
-        type: "Github",
-        href: "https://github.com/shashank-poola/tipfinity",
-        icon: "github",
-      },
-      {
-        type: "Demo",
-        href: "https://youtu.be/_r4F5qOw8fs?si=lRDEVFe8LM97Bkns",
-        icon: "youtube",
-      },
-    ],
-    image: "/projects/tipfinity.png",
-    video: "",
-  },
-  {
-    title: "Plutolab",
-    href: "#",
-    active: true,
-    description:
-      "AI-powered platform that generates full-stack applications from simple prompts, Built to turn ideas into production-ready software within seconds.",
-    technologies: [
-      "NextJS",
-      "Typescript",
-      "turborepo",
-      "bun",
-      "Gemini",
-      "Openrouter",
-      "Docker",
-      "ExpressJS"
-    ],
-    links: [
-      {
-        type: "Github",
-        href: "https://github.com/shashank-poola/plutolab",
-        icon: "github",
-      },
-    ],
-    image: "/projects/plutolab.png",
-    video: "",
-  },
-  {
-    title: "Sonara - Music Player App",
-    href: "https://youtu.be/FnBajhBJ7Z4?si=kZwJngUQ2bwgi_8i",
-    active: true,
-    description:
-      "Sonara is a React Native music player built with Expo and TypeScript, featuring real-time music discovery, synced player controls, and a polished mobile UI powered by the JioSaavn API.",
-    technologies: [
-      "React Native",
-      "Expo",
-      "Typescript",
-      "Redux",
-      "JioSaavn",
-    ],
-    links: [
-      {
-        type: "Github",
-        href: "https://github.com/shashank-poola/sonara-music.git",
-        icon: "github",
-      },
-      {
-        type: "Demo",
-        href: "https://youtu.be/FnBajhBJ7Z4?si=7lTyWZU3oqtkORgv",
-        icon: "youtube",
-      },
-    ],
-    image: "",
-    video: "/projects/sonara.mp4",
-  },
+  // {
+  //   title: "Tipfinity",
+  //   href: "https://github.com/shashank-poola/tipfinity-v2",
+  //   active: true,
+  //   description:
+  //     "Tipfinity is an instant creator tipping platform built on Solana, allowing fans to support creators in seconds with near-zero fees.",
+  //   technologies: [
+  //     "Solana",
+  //     "NextJS",
+  //     "Bun",
+  //     "Typescript",
+  //     "Prisma",
+  //     "Postgresql",
+  //     "Docker",
+  //   ],
+  //   links: [
+  //     {
+  //       type: "Website",
+  //       href: "https://tipfinity.xyz",
+  //       icon: "globe",
+  //     },
+  //     {
+  //       type: "Github",
+  //       href: "https://github.com/shashank-poola/tipfinity",
+  //       icon: "github",
+  //     },
+  //     {
+  //       type: "Demo",
+  //       href: "https://youtu.be/_r4F5qOw8fs?si=lRDEVFe8LM97Bkns",
+  //       icon: "youtube",
+  //     },
+  //   ],
+  //   image: "/projects/tipfinity.png",
+  //   video: "",
+  // },
+  // {
+  //   title: "Plutolab",
+  //   href: "#",
+  //   active: true,
+  //   description:
+  //     "AI-powered platform that generates full-stack applications from simple prompts, Built to turn ideas into production-ready software within seconds.",
+  //   technologies: [
+  //     "NextJS",
+  //     "Typescript",
+  //     "turborepo",
+  //     "bun",
+  //     "Gemini",
+  //     "Openrouter",
+  //     "Docker",
+  //     "ExpressJS"
+  //   ],
+  //   links: [
+  //     {
+  //       type: "Github",
+  //       href: "https://github.com/shashank-poola/plutolab",
+  //       icon: "github",
+  //     },
+  //   ],
+  //   image: "/projects/plutolab.png",
+  //   video: "",
+  // },
+  // {
+  //   title: "Sonara - Music Player App",
+  //   href: "https://youtu.be/FnBajhBJ7Z4?si=kZwJngUQ2bwgi_8i",
+  //   active: true,
+  //   description:
+  //     "Sonara is a React Native music player built with Expo and TypeScript, featuring real-time music discovery, synced player controls, and a polished mobile UI powered by the JioSaavn API.",
+  //   technologies: [
+  //     "React Native",
+  //     "Expo",
+  //     "Typescript",
+  //     "Redux",
+  //     "JioSaavn",
+  //   ],
+  //   links: [
+  //     {
+  //       type: "Github",
+  //       href: "https://github.com/shashank-poola/sonara-music.git",
+  //       icon: "github",
+  //     },
+  //     {
+  //       type: "Demo",
+  //       href: "https://youtu.be/FnBajhBJ7Z4?si=7lTyWZU3oqtkORgv",
+  //       icon: "youtube",
+  //     },
+  //   ],
+  //   image: "",
+  //   video: "/projects/sonara.mp4",
+  // },
   {
     title: "HighlightText",
     href: "https://github.com/shashank-poola/highlightnow",
@@ -244,60 +304,60 @@ export const PROJECTS_DATA = [
     image: "/projects/highlighttext.png",
     video: "",
   },
-  {
-    title: "Rxdecode",
-    href: "https://rxdecode.shasha.ink",
-    active: true,
-    description:
-      "AI-powered prescription generator using Gemini that explains medicines based on doctor prescription, Provides detailed medicine information including usage, dosage, side effects, precautions, and warnings.",
-    technologies: [
-      "ReactJS",
-      "Typescript",
-      "NodeJS",
-      "npm",
-      "Google gemini"
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://rxdecode.shasha.ink",
-        icon: "globe",
-      },
-      {
-        type: "Github",
-        href: "https://github.com/shashank-poola/rxdecode-next",
-        icon: "github",
-      },
-    ],
-    image: "/projects/rxdecode.png",
-    video: "",
-  },
-  {
-    title: "Nexora - GSAP Animation",
-    href: "https://nexora.shasha.ink",
-    active: true,
-    description:
-      "A modern web application featuring GSAP animations and built with React. Showcases smooth animations and interactive user experience.",
-    technologies: [
-      "Javascript",
-      "ReactJS",
-      "Appwrite",
-      "ExpressJS",
-      "npm"
-    ],
-    links: [
-      {
-        type: "Website",
-        href: "https://nexora.shasha.ink",
-        icon: "globe",
-      },
-      {
-        type: "Github",
-        href: "https://github.com/shashank-poola/nexora",
-        icon: "github",
-      },
-    ],
-    image: "/projects/nexora.png",
-    video: "",
-  },
+  // {
+  //   title: "Rxdecode",
+  //   href: "https://rxdecode.shasha.ink",
+  //   active: true,
+  //   description:
+  //     "AI-powered prescription generator using Gemini that explains medicines based on doctor prescription, Provides detailed medicine information including usage, dosage, side effects, precautions, and warnings.",
+  //   technologies: [
+  //     "ReactJS",
+  //     "Typescript",
+  //     "NodeJS",
+  //     "npm",
+  //     "Google gemini"
+  //   ],
+  //   links: [
+  //     {
+  //       type: "Website",
+  //       href: "https://rxdecode.shasha.ink",
+  //       icon: "globe",
+  //     },
+  //     {
+  //       type: "Github",
+  //       href: "https://github.com/shashank-poola/rxdecode-next",
+  //       icon: "github",
+  //     },
+  //   ],
+  //   image: "/projects/rxdecode.png",
+  //   video: "",
+  // },
+  // {
+  //   title: "Nexora - GSAP Animation",
+  //   href: "https://nexora.shasha.ink",
+  //   active: true,
+  //   description:
+  //     "A modern web application featuring GSAP animations and built with React. Showcases smooth animations and interactive user experience.",
+  //   technologies: [
+  //     "Javascript",
+  //     "ReactJS",
+  //     "Appwrite",
+  //     "ExpressJS",
+  //     "npm"
+  //   ],
+  //   links: [
+  //     {
+  //       type: "Website",
+  //       href: "https://nexora.shasha.ink",
+  //       icon: "globe",
+  //     },
+  //     {
+  //       type: "Github",
+  //       href: "https://github.com/shashank-poola/nexora",
+  //       icon: "github",
+  //     },
+  //   ],
+  //   image: "/projects/nexora.png",
+  //   video: "",
+  // },
 ] as const;
